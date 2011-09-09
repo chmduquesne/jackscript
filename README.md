@@ -30,4 +30,4 @@ jackscript path/to/script.jack
 
 ### Forking
 
-Feel free to do whatever you want, I don't plan to maintain any of this stuff. This is just a joke, and I actually don't know no shit about ruby.
+Feel free to do whatever you want, I don't plan to maintain any of this stuff. This fork is just a joke, I did not even checked that it was working correctly...
