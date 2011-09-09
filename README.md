@@ -11,7 +11,7 @@ forked from [TrollScript](https://github.com/tombell/trollscript).
 
 ## INSTALLATION
 
-You should figure it by yourself...
+You should figure it out by yourself...
 
 ## USAGE
 
@@ -30,4 +30,4 @@ jackscript path/to/script.jack
 
 ### Forking
 
-Feel free to do whatever you want, I don't plan to maintain any of this stuff.
+Feel free to do whatever you want, I don't plan to maintain any of this stuff. This is just a joke, and I actually don't know no shit about ruby.
