@@ -55,9 +55,9 @@ class TrollScript
     level = 1
     while @cp < @code.size
       @cp += 1
-      if @code[@cp] == 'llo'
+      if @code[@cp] == 'all work and no play makes jack a dull boy'
         level += 1
-      elsif @code[@cp] == 'lll'
+      elsif @code[@cp] == 'boy dull a jack makes play no and work all'
         level -= 1
       end
       break if level == 0
@@ -68,9 +68,9 @@ class TrollScript
     level = 1
     while @cp >= 0
       @cp -= 1
-      if @code[@cp] == 'lll'
+      if @code[@cp] == 'boy dull a jack makes play no and work all'
         level += 1
-      elsif @code[@cp] == 'llo'
+      elsif @code[@cp] == 'all work and no play makes jack a dull boy'
         level -= 1
       end
       break if level == 0
