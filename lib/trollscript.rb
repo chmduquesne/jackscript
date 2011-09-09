@@ -38,16 +38,16 @@ class TrollScript
 
   def create_ops
     {
-      "tro" => -> {},
-      "ooo" => -> { @tp = (@tp == @tape.size - 1 ? 0 : @tp + 1) },
-      "ool" => -> { @tp = (@tp == 0 ? @tape.size - 1 : @tp - 1) },
-      "olo" => -> { @tape[@tp] += 1 },
-      "oll" => -> { @tape[@tp] -= 1 },
-      "loo" => -> { print @tape[@tp].chr if @tape[@tp] },
-      "lol" => -> { get_input },
-      "llo" => -> { jump_to_close if @tape[@tp] == 0 },
-      "lll" => -> { jump_to_open unless @tape[@tp] == 0 },
-      "ll." => -> {}
+      "All work and no play makes Jack a dull boy" => -> {},
+      "ALL WORK AND NO PLAY MAKES JACK A DULL BOY" => -> { @tp = (@tp == @tape.size - 1 ? 0 : @tp + 1) },
+      "alL worK anD nO plaY makeS jacK A dulL boY" => -> { @tp = (@tp == 0 ? @tape.size - 1 : @tp - 1) },
+      "All Work And No Play Makes Jack A Dull Boy" => -> { @tape[@tp] += 1 },
+      "Allworkandnoplaymakesjackadullboy" => -> { @tape[@tp] -= 1 },
+      "ALl WORk ANd No PLAy MAKEs JACk a DULl BOy" => -> { print @tape[@tp].chr if @tape[@tp] },
+      "Alll workk andd noo playy makess Jackk aa Dulll Boyy" => -> { get_input },
+      "all work and no play makes jack a dull boy" => -> { jump_to_close if @tape[@tp] == 0 },
+      "boy dull a jack makes play no and work all" => -> { jump_to_open unless @tape[@tp] == 0 },
+      "AllWorkAndNoPlayMakesJackADullBoy" => -> {}
     }
   end
 
