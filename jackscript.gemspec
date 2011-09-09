@@ -1,11 +1,11 @@
 $LOAD_PATH.unshift 'lib'
-require "trollscript/version"
+require "jackscript/version"
 
 Gem::Specification.new do |s|
-  s.name              = "trollscript"
-  s.version           = TrollScript::VERSION
+  s.name              = "jackscript"
+  s.version           = JackScript::VERSION
   s.date              = Time.now.strftime('%Y-%m-%d')
-  s.summary           = "An alternative dialect of Brainfuck, for trolls."
+  s.summary           = "A tribute to the shining, brainfuck style"
   s.homepage          = "https://github.com/tombell/trollscript"
   s.email             = "tomb@tombell.org.uk"
   s.authors           = [ "Tom Bell" ]
@@ -17,8 +17,8 @@ Gem::Specification.new do |s|
   s.files            += Dir.glob("man/**/*")
   s.files            += Dir.glob("test/**/*")
 
-  s.executables       = %w( trollscript bf2ts )
+  s.executables       = %w( jackscript bf2ts )
   s.description       = <<desc
-  TrollScript is basically an esoteric dialect of Brainfuck. Why did I make it I hear you ask? Because I had some free time.
+  JackScript is a dialect of Brainfuck based on various capitalizations of "All work and no play makes Jack a dull boy".
 desc
 end
