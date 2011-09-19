@@ -3,16 +3,17 @@
 # Outputs to STDOUT, redirect to a file of your choosing
 str = ARGF.read
 {
-  ">" => "All work and no play makes Jack a dull boy. ",
-  "<" => "All WORK and no PLAY makes Jack a DULL boy. ",
-  "+" => "ALL work and NO play makes Jack a dull boy. ",
-  "-" => "ALL WORK and NO PLAY makes Jack a dull boy. ",
-  "." => "All work AND no play MAKES Jack a dull boy. ",
-  "," => "ALL WORK AND NO PLAY makes Jack a dull boy. ",
-  "[" => "All work and no play MAKES JACK A DULL BOY. ",
-  "]" => "ALL WORK AND NO PLAY MAKES JACK A DULL BOY. "
+  ">" => "All work and no play makes Jack a dull boy! ",
+  "<" => "All WORK and no PLAY makes Jack a DULL boy! ",
+  "+" => "ALL work and NO play makes Jack a dull boy! ",
+  "-" => "ALL WORK and NO PLAY makes Jack a dull boy! ",
+  "." => "All work AND no play MAKES Jack a dull boy! ",
+  "," => "ALL WORK AND NO PLAY makes Jack a dull boy! ",
+  "[" => "All work and no play MAKES JACK A DULL BOY! ",
+  "]" => "ALL WORK AND NO PLAY MAKES JACK A DULL BOY! "
 }.each do |from, to|
   str = str.gsub(from, to)
 end
+str = str.gsub("!", ".")
 
-puts "#{str}"
+puts str
