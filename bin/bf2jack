@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-# Expects one brainfuck file to turn into trollscript
+# Expects one brainfuck file to turn into jackscript
 # Outputs to STDOUT, redirect to a file of your choosing
 str = ARGF.read
 {

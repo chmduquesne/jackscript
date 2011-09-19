@@ -3,6 +3,6 @@
 $LOAD_PATH.unshift File.join(File.dirname(__FILE__), '..', 'lib')
 require 'jackscript'
 
-app = TrollScript.new
+app = JackScript.new
 app.compile ARGF.read
 app.run
